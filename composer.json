@@ -1,0 +1,40 @@
+{
+  "name": "rvadym/users",
+  "description": "Users",
+  "license": "GNU",
+  "type": "package",
+  "repositories":[
+    {
+      "type": "vcs",
+      "url": "git@github.com:rvadym/types.git"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "rvadym/types": "@stable",
+    "ramsey/uuid": "@stable"
+  },
+  "require-dev": {
+    "phan/phan": "@stable",
+    "mockery/mockery": "@stable",
+    "phpunit/php-code-coverage": "^7.0",
+    "phpunit/phpunit": "^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rvadym\\Users\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Rvadym\\Users\\": "tests/"
+    }
+  },
+  "scripts": {},
+  "config": {
+    "preferred-install": "source",
+    "bin-dir": "bin"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
